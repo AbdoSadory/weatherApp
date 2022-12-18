@@ -1,0 +1,70 @@
+body {
+  background-color: rgb(0, 102, 255);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.countries-parent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  flex-wrap: wrap;
+}
+.country-card {
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+  padding: 30px 60px;
+  margin-left: 100px;
+}
+.country-card:first-child {
+  margin-left: unset;
+}
+.country-card h3 {
+  font-size: 30px;
+}
+.country-card p {
+  font-size: 20px;
+}
+.country-historical {
+  position: absolute;
+  width: 50%;
+  top: 30%;
+  background-color: white;
+  border-radius: 15px;
+  padding: 30px;
+  display: none;
+  border: 8px solid black;
+}
+.country-historical-name h3 {
+  text-transform: capitalize;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.country-historical-values {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 10px;
+  color: white;
+}
+
+.country-historical-value {
+  background-color: rgb(0, 102, 255);
+  border-radius: 15px;
+  width: 80%;
+  padding: 25px;
+  font-size: 20px;
+}
+.country-historical-value h4 {
+  margin-bottom: 10px;
+}
